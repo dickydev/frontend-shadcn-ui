@@ -1,10 +1,10 @@
-import { Navigate, Route, Routes } from "react-router-dom"
-import { AppShell } from "@/app/layout/AppShell"
-import { HomePage } from "@/pages/HomePage"
-import { BasicsPage } from "@/pages/BasicsPage"
-import { InteractivePage } from "@/pages/InteractivePage"
-import { FormsPage } from "@/pages/FormsPage"
-import { PlaygroundPage } from "@/pages/PlaygroundPage"
+import { Navigate, Route, Routes } from "react-router-dom";
+import { AppShell } from "@/app/layout/AppShell";
+import { HomePage } from "@/pages/HomePage";
+import { BasicsPage } from "@/pages/BasicsPage";
+import { InteractivePage } from "@/pages/InteractivePage";
+import { FormsPage } from "@/pages/FormsPage";
+import { PlaygroundPage } from "@/pages/PlaygroundPage";
 
 export function AppRouter() {
   return (
@@ -18,5 +18,5 @@ export function AppRouter() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>
-  )
+  );
 }
